@@ -1,0 +1,46 @@
+.sans{
+    font-family:sans-serif;
+}
+.fa-calendar{
+    margin-right:2%;
+}
+.navbar{
+    font-family:sans-serif;
+   
+}
+.head{
+    font-size:1.4em;
+    color:black;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family:sans-serif;
+}
+.meeting{
+    font-size:1.2em;
+    font-family:sans-serif;
+    text-transform: capitalize;
+    font-weight:bold;
+    margin-top: 10px;
+}
+.left-text,.right-text{
+    font-size:1.2em;
+    font-family:sans-serif;
+    text-transform: capitalize;
+    margin-bottom:3px;
+    text-align:center;
+
+}
+.fa-handshake-o{
+    color:black;
+}
+.box{
+    border:1px solid black;
+    margin-bottom:4vh;
+    
+}
+a{
+	color: midnightblue;
+}
+.log-out:hover{
+cursor: pointer;
+}

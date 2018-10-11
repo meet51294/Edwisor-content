@@ -1,0 +1,28 @@
+.container-fluid{
+    margin:0;
+    padding:0;
+    
+    height:100vh;
+    width:100vw;
+}
+.row{
+    height:100%;
+    width:80%;
+    margin: 0 auto;
+    background:white;
+    overflow:auto;
+    
+
+}
+.sans{
+    font-size:1.2em;
+    font-family: sans-serif;
+    color:black;
+    font-weight: 500;
+}
+.font{
+    font-family: sans-serif;
+}
+#selector{
+    max-width:150px;
+}

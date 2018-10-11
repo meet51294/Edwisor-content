@@ -1,0 +1,123 @@
+.header{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    text-align: center;
+  }
+  .navbar{
+    cursor: pointer;
+  }
+.aside{
+    background:  #f5f5f5;
+    height:100vh;
+    overflow:auto;
+    margin-top:2%;
+}
+h5{
+    font-weight: bold;
+    color:black;
+    background:#f5f5f5;
+    padding:1%;
+}
+.list{
+    list-style-type: square;
+    display:inline-block;
+    
+}
+.user{
+    background-color:#7c8ca5;
+    color:black;
+    padding:5%;
+    display:block;
+    width:100%;
+    font-size:1.2em;
+    text-align:center;
+    font-family:sans-serif;
+}
+.all{
+    font-size:1.3em;
+    margin:3vh 0;
+}
+.tasks{
+    text-transform:capitalize;
+    font-family:sans-serif;
+    font-size:1.3em;
+}
+.tasks:hover{
+    cursor:pointer;
+    text-decoration:underline;
+}
+.fasquare{
+    text-align: center;
+    font-size:2.2em;
+    margin-left:43%;
+    margin-top:3%;
+}
+.fasquare:hover{
+    color:red;
+    cursor:pointer;
+}
+.fa-user{
+    margin-right:1%;
+    font-size:1.4em;
+}
+.trash1{
+    color: red;;
+    float:right;
+    margin-top:1%;
+    font-size:1.2em;
+}
+.fa-trash-o:hover{
+    cursor:pointer;
+    color:red;
+}
+
+.input{
+    margin-top:3%;
+}
+.textfield{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:3px solid #9966ff;
+}
+.square2{
+    font-size:2em;
+    margin-left:1%;
+}
+.square2:hover{
+color:red;
+cursor:pointer;
+}
+
+.tasklist{
+    margin-top:2%;
+    overflow:auto;
+    height:82vh;
+}
+.listname{
+    font-size:1.5em;
+    text-transform:uppercase;
+    color:black;
+    background:#7c8ca5;
+    text-align:center;
+    margin-top:2%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.taskName{
+    background-color:#7c8ca5;
+    color:black;
+    padding:2%;
+    font-size:1.2em;
+    font-family:sans-serif;
+    text-transform: capitalize;
+    margin:0.5% 4%;
+}
+.trash2{
+    float: right;
+    font-size:1.1em;
+    color:whitesmoke;
+}
+.trash2:hover{
+    color:red;
+}

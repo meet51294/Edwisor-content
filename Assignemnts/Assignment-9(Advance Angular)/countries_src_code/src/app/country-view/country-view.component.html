@@ -1,0 +1,143 @@
+<!--CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--End CDN-->
+
+
+<div class="container" style="text-align: center">
+  <div id="back" class="row" style="color:whitesmoke; font-size:24px;">
+    <div class="col md-12">
+      <span *ngIf="uniquecountry;"> Welcome To {{uniquecountry[0].name|uppercase}}!</span>
+    </div>
+  </div>
+
+  <div class="row" style="margin:3%;">
+    <button class="btn btn-lg btn-success " (click)=goback()>
+      <span style="color:white">Go Back</span>
+    </button>
+  </div>
+  <div class="row" style="font-size:1.6em">
+    <div class="col-md-4">
+      <u>Name:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].name}}
+    </div>
+    <div class="col-md-4">
+      <u> Alpha2Code:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].alpha2Code}}
+    </div>
+    <div class="col-md-4">
+      <u> Alpha3Code:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].alpha3Code}}
+    </div>
+
+    <div class="col-md-4">
+      <u> Capital:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].capital}}
+    </div>
+    <div class="col-md-4">
+      <u> Region:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].region}}
+    </div>
+    <div class="col-md-4">
+      <u> Currency:</u>
+    </div>
+    <div class="col-md-8">
+      <a style="color:Blue" [routerLink]="['/currency',uniquecountry[0].currencies[0].code]"> {{uniquecountry[0].currencies[0].name}}</a>
+    </div>
+    <div class="col-md-4">
+      <u> Currency-Code:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].currencies[0].code}}
+    </div>
+    <div class="col-md-4">
+      <u> Subregion:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].subregion}}
+    </div>
+    <div class="col-md-4">
+      <u> Population:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].population}}
+    </div>
+
+
+    <div class="col-md-4">
+      <u>Demonym:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].demonym}}
+    </div>
+
+    <div class="col-md-4">
+      <u> Area:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].area}}
+    </div>
+
+
+    <div class="col-md-4">
+      <u>Gini:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].gini}}
+    </div>
+    <div class="col-md-4">
+      <u> Language: </u>
+    </div>
+    <div class="col-md-8">
+      <a style="color:green" [routerLink]="['/language',uniquecountry[0].languages[0].iso639_1]">
+        {{uniquecountry[0].languages[0].name}}
+      </a>
+
+    </div>
+
+
+    <div class="col-md-4">
+      <u>NativeName:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].nativeName}}
+    </div>
+    <div class="col-md-4">
+      <u> Numeric-Code: </u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].numericCode}}
+    </div>
+    <div class="col-md-4">
+      <u>Demonym:</u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].demonym}}
+    </div>
+    <div class="col-md-4">
+      <u> Translations: </u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].translations|json}}
+    </div>
+
+    <div class="col-md-4">
+      <u> Borders: </u>
+    </div>
+    <div class="col-md-8">
+      {{uniquecountry[0].borders}}
+    </div>
+
+  </div>
+</div>

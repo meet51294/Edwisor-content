@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <p class="dateheading">
+        
+        <i class="left-btn" (click)=goBack()> <button class="btn btn-outline-dark">Back</button> </i>
+        <i class="fa fa-calendar" style="padding: 2px"></i> {{dateId|date:'longDate'}}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="this.hasEvents==true else notfound">
+  <div style="margin-top:3vh;" *ngFor="let meeting of allMeetings;let index=index" class="row">
+
+    <div class="col-12">
+      <p class="usertext">
+        <i class="fa fa-pencil" (click)=moveToEdit(meeting.id)></i>
+        <i class="fa fa-handshake-o" style="padding: 2px"></i> Meeting {{index+ 1}}
+        <i class="fa fa-trash-o" (click)="deleteMeeting(meeting.id)"></i>
+      </p>
+    </div>
+    <div class="col-sm-6 left-side">Title:</div>
+    <div class="col-sm-6 right-side">{{meeting.title}}</div>
+
+    <div class="col-sm-6 left-side">Details:</div>
+    <div class="col-sm-6 right-side">{{meeting.details}}</div>
+
+    <div class="col-sm-6 left-side">Start-Date:</div>
+    <div class="col-sm-6 right-side">{{meeting.start|date:longDate}}</div>
+
+    <div class="col-sm-6 left-side">End-Date:</div>
+    <div class="col-sm-6 right-side">{{meeting.end|date:longDate}}</div>
+
+    <div class="col-sm-6 left-side">Start-Time:</div>
+    <div class="col-sm-6 right-side">{{meeting.startTime}}</div>
+
+    <div class="col-sm-6 left-side">End-Time:</div>
+    <div class="col-sm-6 right-side">{{meeting.endTime}}</div>
+
+
+    <div *ngIf="meeting.online==true else offline" class="col-sm-6 left-side">Online:</div>
+    <div class="col-sm-6 right-side">{{meeting.via}}</div>
+
+
+
+    <ng-template #offline>
+      <div class="col-sm-6 left-side">Address</div>
+      <div class="col-sm-6 right-side">{{meeting.address}}</div>
+    </ng-template>
+
+
+
+  </div>
+</div>
+
+<ng-template #notfound>
+  <p class="text-center notfound">
+    <i class="fa fa-close"></i>No Meetings Scheduled</p>
+</ng-template>

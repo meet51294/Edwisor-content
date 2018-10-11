@@ -1,0 +1,13 @@
+#back{
+    background:url("../../assets/world-map.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.btn1{
+    margin-top: 20px;
+    
+}
+.fig{
+       font-size: 20px;
+}

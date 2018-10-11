@@ -1,0 +1,344 @@
+body{
+	margin:0;
+	font-family:sans-serif;
+	background-color:#fff;
+	font-size:16px;
+	line-height:1.6;
+	font-family:"LMRomanSlant10",serif;
+	color:#111;
+	font-style: italic;
+	
+}
+footer,header,menu,nav{
+	display:block;
+}
+
+a{
+	background-color:transparent
+}
+a:active,a:hover{
+	outline:0
+}
+abbr[title]{
+	border-bottom:1px dotted
+}
+strong{
+	font-weight:bold
+}
+
+h1{
+	font-size:2em;
+	margin:0.67em 0
+}
+/*Header Style*/
+#hero{
+	position: relative;
+    width: 1440px;
+    max-width: 95%;
+    height: 600px;
+    margin: 30px auto;
+    background-color: #efefef;
+    overflow: hidden;
+}
+#hero header{
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+	display:flex;
+	width:95%;
+	height:80px;
+	align-items:center;
+	justify-content:flex-end;
+	
+}
+#hero header .nav-toggle{
+	position:relative;
+	display:flex;
+	width:80px;
+	align-items:center;
+	justify-content:space-between;
+	cursor:pointer;
+}
+#hero header .nav-toggle p{
+	font-size:14px;
+	font-style: normal;	
+	font-family:"Raleway",Helvetica,sans-serif;
+	text-transform:uppercase;
+}
+#hero header .nav-toggle span,#hero header .nav-toggle span:before,#hero header .nav-toggle span:after{
+	content:"";
+	position:relative;
+	display:block;
+	width:23px;
+	height:2px;
+	background-color:#111;
+}
+#hero header .nav-toggle span:before{
+	bottom:7px;
+}
+#hero header .nav-toggle span:after{
+	top:5px;
+}
+#hero .wrapper{
+	position:relative;
+	display:flex;
+	width:1180px;
+	max-width:95%;
+	height:100%;
+	margin:0 auto;
+	center;
+	align-items:center;
+}
+#hero .wrapper .welcome{
+	width:45%;
+}
+#hero .wrapper .welcome:after{
+	content:"";
+	display:block;
+	width:1px;
+	height:70px;
+	background-color:#111;
+}
+#hero .wrapper .welcome h1{
+	margin-top:0;
+	margin-bottom:30px;
+	font-style:normal;
+	font-size:42px;
+	font-family:"Raleway",Helvetica,sans-serif;
+	font-weight:100;
+}
+#hero .wrapper .welcome p{
+	max-width:450px;
+	margin-bottom:30px;
+}
+#hero .wrapper .photo{
+	width:55%;
+	
+}
+#hero .wrapper .photo img{
+	width:70%;
+	opacity:.95;
+}
+
+/*Skills Style*/
+#featured{
+	position:relative;
+	width:1440px;
+	max-width:95%;
+	height:600px;
+	margin:30px auto;
+	background-color:#efefef;
+	overflow:hidden;
+}
+
+#featured .wrapper{
+	position:relative;
+	text-align: center;
+	width:1180px;
+	max-width:95%;
+	height:100%;
+	margin:0 auto;
+	
+}
+
+#featured .wrapper h2{
+	margin-top:30px;
+	font-style: normal;
+	margin-bottom:30px;
+	font-size:42px;
+	font-family:"Raleway",Helvetica,sans-serif;
+	font-weight:100;
+}
+
+/* Contact Style*/
+#contact{
+	position:relative;
+	width:1440px;
+	max-width:95%;
+	height:600px;
+	margin:30px auto;
+	background-color:#efefef;
+	overflow:hidden;
+}
+
+#contact .wrapper{
+	position:relative;
+	display:flex;
+	width:1180px;
+	max-width:95%;
+	height:100%;
+	margin:0 auto;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+}
+#contact .wrapper .blurb{
+	max-width:950px;
+	margin-top:-45px;
+	text-align:center;
+}
+#contact .wrapper .blurb h2{
+	margin-top:0;
+	font-family: normal;
+	margin-bottom:30px;
+	font-size:42px;
+	font-family:"Raleway",Helvetica,sans-serif;
+	font-weight:100;
+}
+
+#contact .wrapper .blurb p{
+	margin-bottom:45px;
+}
+#contact .wrapper form{
+	position:relative;
+	display:flex;
+	max-width:600px;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	color:#111;
+	font-family:"Raleway",Helvetica,sans-serif;
+}
+#contact .wrapper form input[type="email"],#contact .wrapper form input[type="text"]{
+	width:42%;
+	height:40px;
+	padding:0 15px;
+	border:1px solid #111;
+	border-radius:0;
+	background:transparent;
+}
+#contact .wrapper form input[type="email"]
+#contact .wrapper form input[type="text"]{
+	color:#111;
+}
+
+#contact .wrapper form input[type="email"]::placeholder,
+#contact .wrapper form input[type="text"]::placeholder{
+	color:#111;
+}
+#contact .wrapper form input[type="email"]:focus,
+#contact .wrapper form input[type="text"]:focus{
+	outline:none;
+}
+#contact .wrapper form textarea{
+	width:100%;
+	height:90px;
+	margin:30px 0;
+	padding:10px 15px;
+	border:1px solid #111;
+	border-radius:0;
+	background:transparent;
+	resize:none;
+}
+#contact .wrapper form textarea{
+	color:#111;
+}
+#contact .wrapper form textarea{
+	color:#111;
+}
+#contact .wrapper form textarea{
+	color:#111;
+}
+#contact .wrapper form textarea::placeholder{
+	color:#111;
+}
+#contact .wrapper form textarea:focus{
+	outline:none;
+}
+#contact .wrapper form input[type="submit"]{
+	width:100%;
+	height:40px;
+	color:#fff;
+	font-weight:700;
+	text-transform:uppercase;
+	border:none;
+	border-radius:0;
+	background-color:#111;
+}
+#contact .copyright{
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	-webkit-transform:translate(-50%);
+	transform:translate(-50%);
+	margin-bottom:0;
+	font-family:"Raleway",Helvetica,sans-serif;font-size:12px;
+}
+
+/*Responsive Media Queries*/
+
+@media (max-width: 415px){
+	body{font-size:14px;}
+}
+
+@media (max-width: 768px){
+	#hero{margin:15px auto}
+}
+@media (max-width: 640px){
+	#hero .wrapper .welcome h1{margin-bottom:20px;font-size:30px;}
+}
+@media (max-width: 1180px){
+	#hero .wrapper .welcome:after{display:none}
+	#hero .wrapper .welcome p{margin-bottom:0;}
+}
+@media (max-width: 1023px){
+	#hero .wrapper .welcome{
+		display:flex;
+		width:100%;
+		flex-direction:column;
+		align-items:flex-end;
+		text-align:right;
+	}
+	#hero .wrapper .photographer{display:none;}
+}
+@media (max-width: 640px){
+	#hero .wrapper .welcome{
+		align-items:center;
+		text-align:center;
+	}
+}
+@media (max-width: 768px){
+	#featured{margin:15px auto;}
+}
+@media (max-width: 640px){
+	#featured .wrapper .blurb h2{
+		margin-bottom:20px;
+		font-size:30px;
+	}
+}
+@media (max-width: 1023px){
+	#featured .wrapper .blurb{
+		display:flex;
+		width:100%;
+		flex-direction:column;
+		align-items:flex-end;
+		text-align:right;
+	}
+	#featured .wrapper .blurb:after{display:none;}
+	#featured .wrapper .blurb p{margin-bottom:0;}
+	#featured .wrapper .featured{display:none;}
+}
+@media (max-width: 640px){
+	#featured .wrapper .blurb{
+		align-items:center;
+		text-align:center;
+	}
+}
+
+@media (max-width: 768px){
+	#contact{margin:15px auto;}
+}
+@media (max-width: 640px){
+	#contact .wrapper .blurb h2{
+		margin-bottom:20px;
+		font-size:30px;
+	}
+}
+
+@media (max-width: 640px){
+	#contact .wrapper form input[type="email"],
+	#contact .wrapper form input[type="text"]{
+		width:100%;margin-bottom:10px;
+	}
+	#contact .wrapper form textarea{
+		margin:0 0 10px 0;}
+}

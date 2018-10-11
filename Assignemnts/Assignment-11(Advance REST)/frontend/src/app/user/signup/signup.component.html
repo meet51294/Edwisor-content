@@ -1,0 +1,44 @@
+<div class="container">
+    <div id="banner" class="row">
+        <div style="text-align: center" class="col-12">
+            <span class="title">Socket Chat</span>
+        </div>
+    </div>
+
+    <div style="margin-top:3%;" class="row">
+        <div class="col-12">
+            <p class="para">Already Have A Account?</p>
+            <a class="btn btn-dark btn-md" (click)=goToSignIn()>
+                <span style="color:whitesmoke">Log-In</span>
+            </a>
+        </div>
+    </div>
+    <form>
+        <div class="form-group" style="margin-top:5%">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" [(ngModel)]='firstName' name="firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" [(ngModel)]='lastName' name="lastName" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="mobileNumber">Phone Number:</label>
+            <input type="text" class="form-control" [(ngModel)]='mobileNumber' name="mobileNumber" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+            <label for="InputEmail">Email address:</label>
+            <input type="email" class="form-control" id="InputEmail" [(ngModel)]='email' name="email" aria-describedby="emailHelp" placeholder="Enter email"
+                required>
+
+        </div>
+        <div class="form-group">
+            <label for="InputPassword">Password:</label>
+            <input type="password" class="form-control" id="InputPassword" [(ngModel)]='password' name="password" placeholder="Password"
+                required>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary" (click)=signUp()>Submit</button>
+    </form>
+</div>

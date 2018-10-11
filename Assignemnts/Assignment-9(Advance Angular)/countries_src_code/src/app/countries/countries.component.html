@@ -1,0 +1,44 @@
+
+<!--CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--End CDN-->
+
+<div class="container">
+  <div class="row" id="back" style="text-align:center; padding:5%;">
+    <div class="col-md-12">
+    <h1><span style= "color:black"><b>Countries</b></span></h1>
+    </div>
+    </div>
+
+    <!--Navbar-->
+  <nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav">
+       <li ><a href="#" [routerLink]="['/home']">Home</a> </li>
+        <li><a href="#" [routerLink]="['/region']">Regions</a> </li>
+        <li><a href="#" [routerLink]="['/coun']">All Countries</a> </li>
+    </ul>
+    
+  </nav>
+<!--End Navbar-->
+
+    <div class="row" *ngIf="countries.length>0">
+    <div class="col-md-4"  *ngFor="let i of countries;">
+        <div class="card" style="width: 18rem; margin-bottom:6%;">
+            <img class="card-img-top img-thumbnail" src="{{i.flag}}" alt="flag">
+            <div class="card-body">
+              <p class="card-title" style="border-bottom:1px solid"><b>{{i.name}}</b></p>
+              <p class="card-text">{{i.region}}</p>
+              <button class="btn bg-dark" [routerLink]="['/country',i.name]"><span >Visit</span></button>
+            </div>
+          </div>
+            
+
+  </div>
+  </div>
+ 
+
+
+    </div>
+

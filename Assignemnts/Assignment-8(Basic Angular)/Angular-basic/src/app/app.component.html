@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--End CDN-->
+<div class="container-fluid">
+    <div class="row" id="head">
+      <div style="text-align:center;" class="col-12">Game Of Thrones
+      </div>
+    </div>
+   
+    <nav class="navbar navbar-inverse">
+      <ul class="nav navbar-nav">
+         <li ><a href="#" [routerLink]="['/home']">Home</a> </li>
+          <li><a href="#" [routerLink]="['/book']">Books</a> </li>
+          <li><a href="#" [routerLink]="['/char']">Characters</a> </li>
+          <li><a href="#" [routerLink]="['/house']">Houses</a></li>
+      </ul>
+      
+    </nav>
+
+  <router-outlet>
+
+  </router-outlet>

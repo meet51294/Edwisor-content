@@ -1,0 +1,115 @@
+<div class="container-fluid">
+    <div class="col-12 header">
+        <h1>TO-DO-LIST</h1>
+    </div>
+
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/todomenu']">Single-User</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">Multi-User</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End Nav Bar-->
+
+    <!--Adding a new task list-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add a New List</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group">
+                        <label for="input">
+                            Name:
+                        </label>
+                        <input [(ngModel)]="name" name="name" class="form-control" placeholder="Enter Name" type="text" />
+                        <label for="textarea" style="resize: none; margin-top:2%;">
+                            Description:
+                        </label>
+                        <textarea [(ngModel)]="description" name="description" class="form-control" maxlength="150" placeholder="Enter Description">
+                        </textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-md text-white bg-success" data-dismiss="modal" (click)="newlist()">Save</button>
+                    <button class="btn btn-md text-white bg-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End new task list-->
+
+    <div class="row">
+
+        <!--aside-->
+
+        <div class="col-md-3 aside">
+            <span class="user">
+
+                Multi-User
+            </span>
+            <div>
+                <i class="fa fa-plus-square addicon" data-toggle="modal" data-target="#myModal"></i>
+            </div>
+            <h6 class="online">Online Users:</h6>
+            <div class="on-users" *ngFor="let user of users">
+                <p *ngIf="user.userId!=userId">
+                    <i class="fa fa-user onicon"></i> {{user.fullName}}
+                </p>
+            </div>
+            <hr>
+            <div *ngFor="let task of taskList">
+                <div *ngIf="task.group==true">
+                    <p (click)=selectList(task.id,task.name) class="name">
+                        <span>
+                            <i class="fa fa-list-alt"></i>{{task.name}}
+                        </span>
+                        <i (click)=deletelist(task.id,task.name) class="fa fa-trash-o trash-2"></i>
+                    </p>
+                    <span class="description">- {{task.description}}</span>
+
+                    <br>
+                    <small style="font-weight:bold" class="text-muted">
+                        <i class="fa fa-user"></i> Created By: {{task.createdBy}}</small>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main task menu -->
+
+        <div class="col-md-9 maintask">
+            <div class="input">
+                <input [(ngModel)]="taskName" name="taskName" style="width:90%; display:inline-block" class="textfield" type="text" placeholder="Enter New Task">
+                <i (click)=addTask() class="fa fa-plus-square square2"></i>
+            </div>
+            <p class="listname">{{listName}}</p>
+            <div class="tasklist">
+                <div *ngFor="let task of alltasks">
+                    <p class="tasks" *ngIf="task.listid==listId">
+                        <input type="checkbox"> {{task.taskName}}
+                        <i (click)=deleteTask(task.taskid) class="fa fa-trash-o trash2"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--end task menu-->
+
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="container">
+  <h1> <i style="padding:10px;" class="fa fa-group"></i>Meeting-Planner</h1>
+  <!--nav-->
+  <nav class="navbar   navbar-expand-sm navbar-light bg-light" data-toggle="affix">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/login']">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/signup']">Sign-Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/forgot']">Forgot-Password</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End Nav-->
+  <!--login-->
+  <div class="col-12" style="margin-top:5%">
+    <p class="text-center title">SIGN IN HERE:</p>
+    <form #loginForm="ngForm" (ngSubmit)="login()">
+      <span class="text email">Email : </span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-user"></i>
+          </span>
+        </div>
+        <input type="email" name="email" [(ngModel)]="email" class="form-control">
+      </div>
+      <br>
+      <span class="text password">Password : </span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-key"></i>
+          </span>
+        </div>
+        <input type="password" name="password" [(ngModel)]="password" class="form-control" />
+      </div>
+      <br>
+      <button style="margin-left:45%;font-family:sans-serif;" type="submit" class="btn btn-success text-white">Login</button>
+      <br>
+      <br>
+    </form>
+  </div>
+  <!---->
+</div>

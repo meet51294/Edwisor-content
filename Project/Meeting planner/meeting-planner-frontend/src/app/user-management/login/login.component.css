@@ -1,0 +1,16 @@
+h1{
+    background-color: black;
+    font-size: 1.5em;
+    font-family: "Raleway",Helvetica,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    letter-spacing: 2px;
+}
+span{
+    font-weight: bold;
+}
+nav{
+    font-weight: bold;
+}

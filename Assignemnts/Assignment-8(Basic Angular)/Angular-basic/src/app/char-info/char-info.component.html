@@ -1,0 +1,39 @@
+<div class="container" *ngIf ="currentChar != null" style="margin-top:3%; margin-bottom:3%; font-size:20px;">
+  <!--CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--End CDN-->
+
+  <div class="row" id="edit">
+
+    <div class="col-md-4">Name:</div>
+    <div class="col-md-8">{{currentChar.name}}</div>
+    <div class="col-md-4">Gender:</div>
+    <div class="col-md-8">{{currentChar.gender}}</div>
+    <div class="col-md-4">Born:</div>
+    <div class="col-md-8">{{currentChar.born}}</div>
+    <div class="col-md-4">Died:</div>
+    <div class="col-md-8">{{currentChar.died}}</div>
+    <div class="col-md-4">Title:</div>
+    <div class="col-md-8">{{currentChar.titles}}</div>
+    <div class="col-md-4">Aliases:</div>
+    <div class="col-md-8">{{currentChar.aliases}}</div>
+    <div class="col-md-4">Father:</div>
+    <div class="col-md-8">{{currentChar.father}}</div>
+    <div class="col-md-4">Mother</div>
+    <div class="col-md-8">{{currentChar.mother}}</div>
+    <div class="col-md-4">Spouse:</div>
+    <div class="col-md-8">{{currentChar.spouse}}</div>
+    <div class="col-md-4">Allegiances:</div>
+    <div class="col-md-8">{{currentChar.allegiances}}</div>
+    <div class="col-md-4">Books:</div>
+    <div class="col-md-8">{{currentChar.books}}</div>
+    <div class="col-md-4">Povbooks:</div>
+    <div class="col-md-8">{{currentChar.povBook}}</div>
+    <div class="col-md-4">TV Series</div>
+    <div class="col-md-8">{{currentChar.tvSeries}}</div>
+    <div class="col-md-4">Played By:</div>
+    <div class="col-md-8">{{currentChar.playedBy}}</div>
+    </div>
+</div>

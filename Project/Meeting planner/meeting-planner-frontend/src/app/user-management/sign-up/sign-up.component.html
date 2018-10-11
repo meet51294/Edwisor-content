@@ -1,0 +1,114 @@
+<div class="container">
+  <h1><i style="padding:10px;" class="fa fa-group"></i>Meeting-Planner</h1>
+  <!--Navbar-->
+  <nav class="navbar   navbar-expand-sm navbar-light bg-light" data-toggle="affix">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a style="font-weight:bold;" class="nav-link" [routerLink]="['/login']">Already have an account: Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/signup']">Sign-Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End-Navbar-->
+  <!--form-->
+  <div class="col-12">
+    <p class="text-center head">Sign Up Here:</p>
+    <form style="width:80%; margin-left:10%;">
+      <!--First-name-->
+      <span class="label">First-Name:</span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-address-book-o"></i>
+          </span>
+        </div>
+        <input type="text" name="firstName" [(ngModel)]="firstName" class="form-control">
+      </div>
+      <br>
+      <!--last-name-->
+      <span class="label">Last-Name:</span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-address-book"></i>
+          </span>
+        </div>
+        <input type="text" class="form-control" name="lastName" [(ngModel)]="lastName">
+      </div>
+      <br>
+      <!--email-->
+      <span class="label">Email:</span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-user"></i>
+          </span>
+        </div>
+        <input type="email" name="email" [(ngModel)]="email" class="form-control">
+      </div>
+      <br>
+      <!--Password-->
+      <span class="label">Password:</span>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-key"></i>
+          </span>
+        </div>
+        <input type="password" name="password" [(ngModel)]="password" class="form-control">
+      </div>
+      <br>
+      <!--admin-->
+      <span class="label">Admin:</span>
+      <br>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-unlock-alt"></i>
+          </span>
+        </div>
+        <input style="max-width:160px;" type="text" name="adminKey" [(ngModel)]="adminKey" class="form-control">
+        <button (click)="verifyAdmin()" style="margin-left:5px;" class="btn btn-info btn-sm textStyle">
+          Verify
+        </button>
+      </div>
+      <small class="textStyle">Enter Secret Key For Admin</small>
+      <br>
+      <br>
+      <!--contact-details-->
+      <span class="label">Contact-Details:</span>
+      <br>
+      <span class="subheading">
+        Select Country-Code*</span>
+      <br>
+      <select class="codeSelect" name="countryCode" [(ngModel)]="countryCode">
+        <option *ngFor="let code of codes" [value]="code.code">
+          {{code.name}} {{code.code}}
+        </option>
+      </select>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">
+            <i class="fa fa-mobile"></i>
+          </span>
+        </div>
+        <input type="text" name="contactNumber" [(ngModel)]="contactNumber" class="form-control">
+      </div>
+      <br>
+      <button (click)="signUp()" style="font-family: sans-serif;margin-bottom:5%;" type="submit" class="btn btn-success">
+        Sign-Up
+      </button>
+    </form>
+  </div>
+  <!--End Form-->
+</div>

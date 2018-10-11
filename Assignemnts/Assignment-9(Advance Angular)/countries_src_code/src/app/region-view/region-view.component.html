@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row" style="margin-top:4%;">
+    <div class="col-md-12">
+      <button class="btn btn-lg btn-primary" (click)=goBackRegion()>
+        Go Back
+      </button>
+    </div>
+  </div>
+  <div class="row" style="margin-top:4%;" *ngIf="regionData.length>0">
+    <div class="col-md-4" *ngFor="let index of regionData;">
+      <div class="card" style="width: 18rem; margin-bottom:6%;">
+        <img class="card-img-top img-thumbnail" src="{{index.flag}}" alt="flag">
+        <div class="card-body">
+          <p class="card-title" style="border-bottom:1px solid">
+            <b>{{index.name}}</b>
+          </p>
+          <p class="card-text">Capital: {{index.capital}}</p>
+          <p class="card-text">Population :{{index.population}}</p>
+          <p style="color:blue; cursor: pointer;" class="card-text" [routerLink]="['/currency',index.currencies[0].code]">Currency: {{index.currencies[0].name}}</p>
+          <p class="card-text">Area: {{index.area}}</p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

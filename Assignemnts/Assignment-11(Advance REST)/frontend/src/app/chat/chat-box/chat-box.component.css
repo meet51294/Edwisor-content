@@ -1,0 +1,88 @@
+#menu{
+    height:88vh;
+    background:white;
+    border:2px grey solid;
+}
+#banner{
+    
+    background-color:gainsboro;
+    color:cornflowerblue;
+    font-size:1.5em;
+    padding:3%;
+    text-align: center;
+}
+#list{
+    padding:2%;
+    font-size:1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#username{
+    background:cornflowerblue;
+    color:white;
+    text-align: center;
+    font-size:1.3em;
+    padding:3%;
+}
+#btn2{
+    margin-top:4%;
+    margin-left:4%;
+}
+.users{
+    margin-top:3%;
+    font-size:1.2rem;
+    color:white;
+}
+
+#chatbox{
+    height:88vh;
+    overflow:auto;
+    background:black;
+    border:2px grey solid;
+    margin-bottom: 2%;
+}
+#chatlogs{
+    height: 70vh;
+    margin-top:4%;
+    margin-bottom:2%;
+    margin-left:4%;
+    margin-right:4%;
+    background:white;
+   overflow:auto;
+}
+
+.form{
+
+    display:flex;
+}
+textarea{
+    width:75%;
+    margin-left:4%;
+    height:40px;
+    resize:none;
+    border:none;
+    background:cornsilk;
+    color:cornflowerblue;
+    font-size:18px;
+    border:none;
+}
+#button{
+    height:40px;
+    margin-left:2%;
+}
+.message{
+    display:block;
+    color:white;
+    background-color:green;
+    padding:2%;
+    font-size:1.2rem;
+    margin:2%;
+    max-width: 34%;
+    overflow-x:auto;
+    border-radius:5%
+}
+.move{  
+   margin-left:65%;
+   background:cornflowerblue;
+}
+

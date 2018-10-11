@@ -1,0 +1,7 @@
+{
+    "name" : "Todo Application",
+   "version":"0.0.1",
+   "description":"Documentation for the todo app",
+   "title" :"TODO APIs",
+   "url" :"http://localhost:1337"
+}

@@ -1,0 +1,18 @@
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+#back{
+    background:url("../../assets/All-country.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.btn1{
+    margin-top: 20px;
+    
+}
+.fig{
+       font-size: 20px;
+}

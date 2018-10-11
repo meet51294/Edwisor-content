@@ -1,0 +1,120 @@
+.header{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    text-align: center;
+  }
+.aside{
+background: #f5f5f5;
+height:100vh;
+overflow:auto;
+margin-top:2%;
+}
+.user{
+    background-color:#7c8ca5;
+    color:black;
+    padding:5%;
+    display:block;
+    width:100%;
+    font-size:1.3em;
+    text-align:center;
+    font-family: sans-serif;
+}
+
+.addicon{
+    font-size:2em;
+    margin-left:45%;
+    margin-top:1%;
+    margin-bottom:1%
+}
+.addicon:hover{
+color:green;
+cursor: pointer;
+}
+.online{
+    text-align:center;
+    margin-top:2%;
+    margin-bottom:2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    background-color:rgb(50, 179, 50);
+    color:black;
+    padding:1%
+}
+.on-users{
+    font-size:1.1em;
+}
+.onicon{
+    color:green;
+}
+.description{
+    font-size:0.9em;
+    font-family:sans-serif;
+}
+.name{
+    font-size:1.2em;
+    font-family: sans-serif;
+    text-transform:capitalize;
+}
+.name:hover{
+text-decoration: underline;
+color:yellowgreen;
+cursor: pointer;
+
+}
+.trash-2{
+    float:right;
+}
+.trash-2:hover{
+    color:red;
+}
+.maintask{
+    margin-top:2%;
+}
+.textfield{
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-radius:3px;
+    border-color:tomato;
+}
+.square2{
+    font-size:1.8em;
+    margin-left:1%;
+}
+.square2:hover{
+    color:green;
+    cursor:pointer;
+}
+.listname{
+    font-size:1.5em;
+    text-transform:uppercase;
+    color:yellowgreen;
+    background:#f5f5f5;
+    text-align:center;
+    margin-top:2%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.tasks{
+    background-color:yellowgreen;
+    color:whitesmoke;
+    padding:2%;
+    font-size:1.2em;
+    font-family:sans-serif;
+    text-transform: capitalize;
+    margin:0.5% 4%;
+}
+.trash2{
+    float: right;
+    font-size:1.1em;
+    color:whitesmoke;
+}
+.trash2:hover{
+    color:red;
+    cursor: pointer;
+}
+.tasklist{
+    margin-top:2%;
+    height:82vh;
+    overflow:auto;
+}

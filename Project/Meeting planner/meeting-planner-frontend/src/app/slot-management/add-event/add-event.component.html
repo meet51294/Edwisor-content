@@ -1,0 +1,58 @@
+<div class="container">
+
+  <div class="col-12 data">
+      <form style="margin-top:2%;">
+           
+          <label class="sans">Title:</label>
+          <input class="form-control" name="title" [(ngModel)]="title" required/>
+          <br>
+
+          <label class="sans">Details:</label>
+          <input class="form-control" name="details" [(ngModel)]="details" required/>
+          <br>
+
+          <label class="sans">Start-Date:</label>
+          <input class="form-control" name="start" [(ngModel)]="start" required/>
+          <small class="font">*Date must be in format MM/DD/YYYY</small>
+          <br>
+
+          <label class="sans">End-Date:</label>
+          <input class="form-control" name="end" [(ngModel)]="end" required/>
+          <small class="font">*Date must be in format MM/DD/YYYY</small>
+          <br>
+
+          <label class="sans">Start-Time:</label>
+          <input class="form-control" name="startTime" [(ngModel)]="startTime" required/>
+          <small class="font">*Time must be in format HH:MM,AM/PM</small>
+          <br>
+
+          <label class="sans">End-Time:</label>
+          <input class="form-control" name="endTime" [(ngModel)]="endTime" required/>
+          <small class="font">*Date must be in format HH:MM,AM/PM</small>
+          <br>
+
+          <label class="sans">Online:</label>
+          <br>
+          <input type="checkbox" [value]=true name="online"
+          [(ngModel)]="online">
+          <span class="font2"> Online-Meeting</span>
+          <br>
+          <small class="font">*Check Here,If you want online meeting</small>
+          <br>
+          <div *ngIf="online==true else addressInput">
+          <select id="selector" class="form-control" name="via" [(ngModel)]="via">
+            <option *ngFor="let social of socials">{{social}}</option>
+          </select>
+          <small class="font">Select Application</small>
+        </div>
+
+        <ng-template #addressInput>
+          <label class="sans">Address :</label>
+        <input type="text" class="form-control" [(ngModel)]="address"
+        name="address">
+        </ng-template>
+        <br>
+        <button (click)=addNewMeeting() class=" btn btn-success">Submit</button>
+        </form>
+  </div>
+</div>

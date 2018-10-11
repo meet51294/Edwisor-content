@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Photography</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+	<!-- Home Section -->
+	<div id="hero">
+		<!-- Navbar -->
+		<header>
+			<div class="nav-toggle">
+	        	<p>Menu</p><span></span>
+	        </div>
+	        <ul class="nav">
+	        	<li><a href="#Home">Home</a></li>
+	        	<li><a href="#about">About</a></li>
+	          	<li><a href="#full-slide">Work</a></li>
+	          	<li><a href="#contact">Contact</a></li>
+	        </ul>
+		</header>
+		<!-- End Navbar -->
+
+		<div id="Home" class="wrapper svg">
+	        <div class="welcome">
+	          	<h1><strong>My Photography</strong></h1>
+	          	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+	        </div>
+	        <div class="photographer"><img src="images/hero.png" alt="Photographer"></div>
+	    </div>
+	</div>
+	<!-- End Home Section -->
+
+	<!-- Model Box -->
+		<section class="v-center">
+  			<div>
+    			<a class="js-open-modal btn" href="#" data-modal-id="popup1"> Know More</a> 
+  			</div>
+		</section>
+
+		<div id="popup1" class="modal-box">
+  			<header> <a href="#" class="js-modal-close close">×</a>
+    			<h3>Model Componant</h3>
+  			</header>
+  			<div class="modal-body">
+    			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo at felis vitae facilisis. Cras volutpat fringilla nunc vitae hendrerit. Donec porta id augue quis sodales. Sed sit amet metus ornare, mattis sem at, dignissim arcu. Cras rhoncus ornare mollis. Ut tempor augue mi, sed luctus neque luctus non. Vestibulum mollis tristique blandit. Aenean condimentum in leo ac feugiat. Sed posuere, est at eleifend suscipit, erat ante pretium turpis, eget semper ex risus nec dolor. Etiam pellentesque nulla neque, ut ullamcorper purus facilisis at. Nam imperdiet arcu felis, eu placerat risus dapibus sit amet. </p>
+  			</div>
+  			<footer> <a href="#" class="btn btn-small js-modal-close">Close</a> </footer>
+		</div>
+	<!-- End Model Box -->	
+	
+	<!-- About Section -->
+	<div id="about">
+		<div class="wrapper">
+	    	<div class="camera"><img src="images/camera.png" alt="Camera"></div>
+	        <div class="blurb">
+	          	<h2>My name is <strong>Mohit</strong></h2>
+	          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id porttitor metus. Aliquam non nisl diam. Donec aliquam, magna id pellentesque imperdiet, elit justo sagittis nulla, feugiat volutpat sem ex ac risus. In neque nibh, pharetra a neque nec, eleifend tempor felis. Pellentesque auctor egestas hendrerit.<br><br>Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+	          	<div class="social"><a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i  class="fa fa-pinterest-p"></i></a></div>
+	        </div>
+		</div>
+	</div>
+	<!-- End About Section -->
+
+	<!-- Image slider -->
+	<div id="full-slide">
+		<ul class="banner">
+	        <li class="active"></li>
+	        <li></li>
+	        <li></li>
+      </ul>
+      	<i class="fa fa-angle-left prev"></i>
+        <i class="fa fa-angle-right next"></i>
+	</div>
+	<!-- End Image Slider -->
+
+	<!-- Accordian  -->
+	<div class="accordion">
+		<h2><strong>My News Feed</strong></h2>
+	    <div class="main">
+			<div class="accordion">
+				<div class="accordion-section">
+					<a class="accordion-section-title" href="#accordion-1">Accordion Section-1</a>
+					<div id="accordion-1" class="accordion-section-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id varius lacus. Integer consequat dui quis placerat scelerisque. Nulla sodales porta nunc eu fermentum. Duis sapien ante, fermentum vel tristique eu, pellentesque sed lacus. Integer gravida tincidunt metus vitae pellentesque. Morbi pretium, ex id iaculis consectetur, velit justo sodales lectus, pretium blandit justo urna eget diam. Suspendisse non risus lacinia, varius risus quis, pretium ligula. Cras semper elit ex, non egestas ex commodo eu. Pellentesque nec nibh id leo condimentum tincidunt. Fusce vel suscipit ligula, at aliquet lorem. Cras massa nisl, hendrerit at porttitor sed, dignissim nec turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sit amet elit ipsum.</p>
+					</div><!--end .accordion-section-content-->
+				</div><!--end .accordion-section-->
+
+				<div class="accordion-section">
+					<a class="accordion-section-title" href="#accordion-2">Accordion Section-2</a>
+					<div id="accordion-2" class="accordion-section-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id varius lacus. Integer consequat dui quis placerat scelerisque. Nulla sodales porta nunc eu fermentum. Duis sapien ante, fermentum vel tristique eu, pellentesque sed lacus. Integer gravida tincidunt metus vitae pellentesque. Morbi pretium, ex id iaculis consectetur, velit justo sodales lectus, pretium blandit justo urna eget diam. Suspendisse non risus lacinia, varius risus quis, pretium ligula. Cras semper elit ex, non egestas ex commodo eu. Pellentesque nec nibh id leo condimentum tincidunt. Fusce vel suscipit ligula, at aliquet lorem. Cras massa nisl, hendrerit at porttitor sed, dignissim nec turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sit amet elit ipsum.</p>
+					</div><!--end .accordion-section-content-->
+				</div><!--end .accordion-section-->
+
+				<div class="accordion-section">
+					<a class="accordion-section-title" href="#accordion-3">Accordion Section-3</a>
+					<div id="accordion-3" class="accordion-section-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id varius lacus. Integer consequat dui quis placerat scelerisque. Nulla sodales porta nunc eu fermentum. Duis sapien ante, fermentum vel tristique eu, pellentesque sed lacus. Integer gravida tincidunt metus vitae pellentesque. Morbi pretium, ex id iaculis consectetur, velit justo sodales lectus, pretium blandit justo urna eget diam. Suspendisse non risus lacinia, varius risus quis, pretium ligula. Cras semper elit ex, non egestas ex commodo eu. Pellentesque nec nibh id leo condimentum tincidunt. Fusce vel suscipit ligula, at aliquet lorem. Cras massa nisl, hendrerit at porttitor sed, dignissim nec turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sit amet elit ipsum.</p>
+					</div><!--end .accordion-section-content-->
+				</div><!--end .accordion-section-->
+			</div><!--end .accordion-->
+		</div>
+	</div>
+	<!-- End Accordian Section -->
+
+	<!-- Contact Section -->
+	<div id="contact">
+		<div class="wrapper">
+	        <div class="blurb">
+	          	<h2><strong>Say</strong> Hello</h2>
+	          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod, nibh et viverra semper, ante metus volutpat diam, sit amet mollis enim lectus ut est. Aliquam dapibus ligula ante, eget tempus lacus ultrices in.</p>
+	        </div>
+	        <form>
+	          	<input type="email" placeholder="Your Email">
+	          	<input type="text" placeholder="Subject">
+	          	<textarea placeholder="Message"></textarea>
+	          	<input type="submit" value="Send Message">
+	        </form>
+      	</div>
+    </div>	
+	<!-- End Contact Section -->
+
+	<script src="js/Jquery.js"></script>
+	
+</body>
+</html>

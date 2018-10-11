@@ -1,0 +1,14 @@
+1. Assignment Name: Basic angular
+   Project url: www.angular-basic.mohitnagpure.com
+
+2. Assignment Name: Advance angular
+   Project url: www.angular-advance.mohitnagpure.com
+   
+3. Assignemnt Name: Basic NodeJs and REST API for a Ecommerce
+   websites
+   Project Url:         
+   http://basic-rest.mohitnagpure.com/api/v2/products/all
+
+4. Assignemnt Name: Advance REST- Group chat application
+   Project url 
+   http://advance-rest.mohitnagpure.com/api/v2/products/all

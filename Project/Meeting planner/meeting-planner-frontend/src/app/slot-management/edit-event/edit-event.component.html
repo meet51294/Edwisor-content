@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row" *ngIf="spinner==false else loading">
+    <div class="col-12 data"  *ngIf="currentDetails!=undefined">
+        <form style="margin-top:2%;">
+             
+            <label class="sans">Title:</label>
+            <input class="form-control" name="title" [(ngModel)]="currentDetails.title" required/>
+            <br>
+  
+            <label class="sans">Details:</label>
+            <input class="form-control" name="details" [(ngModel)]="currentDetails.details" required/>
+            <br>
+  
+            <label class="sans">Start-Date:</label>
+            <input class="form-control" name="start" [(ngModel)]="currentDetails.start" required/>
+            <small class="font">*Date must be in format MM/DD/YYYY</small>
+            <br>
+  
+            <label class="sans">End-Date:</label>
+            <input class="form-control" name="end" [(ngModel)]="currentDetails.end" required/>
+            <small class="font">*Date must be in format MM/DD/YYYY</small>
+            <br>
+  
+            <label class="sans">Start-Time:</label>
+            <input class="form-control" name="startTime" [(ngModel)]="currentDetails.startTime" required/>
+            <small class="font">*Time must be in format HH:MM,AM/PM</small>
+            <br>
+  
+            <label class="sans">End-Time:</label>
+            <input class="form-control" name="endTime" [(ngModel)]="currentDetails.endTime" required/>
+            <small class="font">*Date must be in format HH:MM,AM/PM</small>
+            <br>
+  
+            <label class="sans">Online:</label>
+            <br>
+            <input type="checkbox" [value]=true name="online"
+            [(ngModel)]="currentDetails.online">
+            <span class="font"> Online-Meeting</span>
+            <br>
+            <small class="font">*Check Here,If you want online meeting</small>
+            <br>
+            <div *ngIf="currentDetails.online==true else addressInput">
+            <select id="selector" class="form-control" name="via" [(ngModel)]="currentDetails.via">
+              <option *ngFor="let social of socials" >{{social}}</option>
+            </select>
+            <small class="font">Select Application</small>
+          </div>
+  
+          <ng-template #addressInput>
+            <label class="sans">Address :</label>
+          <input type="text" class="form-control" [(ngModel)]="currentDetails.address"
+          name="address">
+          </ng-template>
+          <br>
+          <button style="margin-bottom:2%;" (click)=editEventDetails(meetingID) class="font btn btn-outline-dark">Edit</button>
+          </form>
+    </div>
+  </div>
+  <ng-template #loading>
+      
+<i style="margin-left:45vw;margin-top:40vh;" class="fa fa-cog fa-spin fa-5x fa-fw">
+</i><span style="font-size:1.3em;font-family:sans-serif;">Editing...</span>
+
+
+  </ng-template>
+  </div>

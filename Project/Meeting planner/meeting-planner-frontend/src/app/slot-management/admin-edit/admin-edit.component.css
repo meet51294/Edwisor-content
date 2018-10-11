@@ -1,0 +1,17 @@
+.add{
+    font-family:sans-serif;
+    font-size:1.4em;
+    margin-bottom:2%;
+    text-align: center;
+    color:midnightblue;
+    background:whitesmoke;
+    padding:1vh;
+    
+}
+.add:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sans{
+    font-family: sans-serif;
+}

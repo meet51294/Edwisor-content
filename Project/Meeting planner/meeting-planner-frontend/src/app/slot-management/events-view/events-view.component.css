@@ -1,0 +1,68 @@
+.dateheading{
+    font-size:1.4em;
+    background:whitesmoke;
+    padding:3vh;
+    color:midnightblue;
+    font-family:sans-serif;
+    font-weight:bold;
+}
+.fa-trash-o{
+ float:right;
+ font-size:1.2em;
+}
+.left-btn{
+float: left;
+font-size: 1.3em;
+}
+
+.fa-hand-o-left{
+    float:left;
+    font-size:1.3em;
+}
+.fa-hand-o-left{
+    cursor: pointer;
+}
+.fa-trash-o:hover{
+    color:red;
+    cursor: pointer;
+}
+
+.right-side,.left-side{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    text-align: center;
+    color:midnightblue;
+    margin-bottom:1vh;
+}
+.usertext{
+    font-size:1.3em;
+    font-family: sans-serif;
+    text-align: center;
+    background:black;
+    color:white;
+    padding:1vh;
+}
+.notfound{
+    height:30vh;
+    width:100%;
+    text-align:center;
+    font-family:sans-serif;
+    font-size:1.3em;
+    letter-spacing:1px;
+    padding-top:5vh;
+    background-color:#f6f6f6;
+}
+#deletebutton{
+    font-family: sans-serif;
+    margin-top:2%;
+}
+.sans{
+    font-family: sans-serif;
+}
+.fa-pencil{
+    float:left;
+    font-size:1.3em;
+}
+.fa-pencil:hover{
+    cursor: progress;
+}

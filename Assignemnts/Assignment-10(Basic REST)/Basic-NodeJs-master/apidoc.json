@@ -1,0 +1,7 @@
+{
+    "name" : "Ecommerce Application",
+    "version": "0.0.2",
+    "description":"Documentation",
+    "title" :"Ecommerce API",
+    "url" :"http://localhost:8080"
+}

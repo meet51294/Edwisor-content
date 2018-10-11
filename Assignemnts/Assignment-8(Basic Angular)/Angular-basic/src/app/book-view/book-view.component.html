@@ -1,0 +1,33 @@
+<!--CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--End CDN-->
+
+<div class="main">
+  <h2 style="text-align: center;margin-top: 2%; margin-bottom:4%;color:slategray"><b>BOOKS</b></h2>
+  <div class="container">
+      <div class="row" *ngIf="allBooks.length>0">
+          <div *ngFor="let book of allBooks" class="col-md-4">
+              <div class="card" style="width: 16rem; margin-bottom: 3%;">
+                  <div class="card-body" style="border:3px solid slategray;">
+                      <h6 class="card-title" style="border-bottom: solid 1px gray;">
+                          {{book.name}}</h6>
+                      <h6 class="card-subtitle mb-2 text-muted">{{book.isbn}}</h6>
+                      <div style="background:grey;color:whitesmoke">
+                          <p>Number Of Pages: {{book.numberOfPages}}</p>
+                         Publisher:
+                              <h6> "{{book.publisher}}"</h6>
+                          
+                          <p>Country: {{book.country}}</p>
+                          <p>MediaType: {{book.mediaType}}</p>
+                          <p>Released: {{book.released|date}}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+</div>

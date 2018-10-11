@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div style="margin-top:1%; color: midnightblue" class="col-12">
+      <span class="brand">Meeting-Planner</span>
+      <span (click)=logout() class="logout textClass">Logout</span>
+    </div>
+    <div class="col-12">
+      <p class="name">Welcome! {{currentUser}} </p>
+    </div>
+    <div class="col-12">
+      <p class="list">ALL Users</p>
+    </div>
+  </div>
+  <div class="row " *ngFor="let user of users let index=index">
+    <div class="col-12">
+      <p class="text-center user-text">
+        <i class="fa fa-user"></i>User {{index+1}}</p>
+    </div>
+    <div class="col-sm-6 text-center left-text ">Name:</div>
+    <div class="col-sm-6 text-center right-text">{{user.userName}}</div>
+    <div class="col-sm-6 text-center left-text ">User-ID:</div>
+    <div class="col-sm-6 text-center right-text">{{user.userId}}</div>
+    <div class="col-sm-6 text-center left-text ">Email:</div>
+    <div class="col-sm-6 text-center right-text">{{user.email}}</div>
+    <div class="col-sm-6 text-center left-text ">Phone Number:</div>
+    <div class="col-sm-6 text-center right-text">{{user.contactNumber}}</div>
+    <div class="col-sm-6 text-center left-text ">Code:</div>
+    <div class="col-sm-6 text-center right-text">{{user.countryCode}}</div>
+
+    <div class="col-12">
+      <br>
+      <button style="margin-left:48%;" [routerLink]="['/admin-edit',user.userId]" class="btn btn-outline-info">View</button>
+      <hr class="lead">
+    </div>
+  </div>
+</div>
